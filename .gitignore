@@ -1,0 +1,5 @@
+# Ignore everything in the user directory
+../../../../
+
+# Except the project directory
+!../../../../Desktop/My Web Development/Projects/My Portfolio
