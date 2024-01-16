@@ -8,24 +8,23 @@ listOfCardElements.forEach((cardElement, index) => {
   });
 });
 
+// Get the current year
+let currentDate = new Date();
+let currentYear = currentDate.getFullYear();
 
+// Find the element with the id "currentYear"
+let currentYearElement = document.getElementById("currentYear");
 
-  // Get the current year
-  let currentDate = new Date();
-  let currentYear = currentDate.getFullYear();
+// Update the content of the element with the current year
+currentYearElement.textContent = currentYear;
 
-  // Find the element with the id "currentYear"
-  let currentYearElement = document.getElementById("currentYear");
-
-  // Update the content of the element with the current year
-  currentYearElement.textContent = currentYear;
-
-
-  // Get the button:
+// Get the button:
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -39,4 +38,14 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
