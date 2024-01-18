@@ -7,7 +7,7 @@ body {
 }
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: skyblue;
   overflow: hidden;
 }
 
@@ -291,6 +291,27 @@ i > h4 {
 
 .footer {
   background-color: #ddd;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+}
+.social-media{
+  text-align: left;
+}
+
+.footerIcons{
+    text-align: left;
+}
+.footerIcons > li {
+  list-style-type: none;
+
+}
+.footerIcons > li > a {
+
+  text-decoration: none;
+color: inherit;
+}
+
+.footerIcons > li > i{
+
+  font-size: 30px;
 }
