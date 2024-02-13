@@ -84,10 +84,10 @@ body {
 }
 
 .posingImage {
-  height: auto;
-  width: 250px;
-  border-radius: 5%;
-  border: solid;
+ height: 10rem;
+ width: 10rem;
+  border-radius: 10rem;
+border:solid;
 }
 
 @media (min-width: 768px) {
@@ -105,7 +105,7 @@ body {
 @media (max-width: 768px) {
   /* Adjust breakpoint as needed */
   .posingImage {
-    width: 200px; /* Example for mobile */
+  /* Example for mobile (width) */
   }
 }
 
@@ -121,11 +121,14 @@ body {
 .contact {
   text-align: center;
   padding: 1rem;
-  border-radius: 5%;
+  border-radius: 7%;
   background-color: #333;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: large;
   font-family: "Georama", sans-serif;
+  border: solid;
+  border: #ff0000;
+  text-decoration: none;
 }
 
 .contact:hover {
@@ -134,62 +137,41 @@ body {
 }
 /*------------------------About Section-----------------------------------*/
 .about {
-  padding: 7rem;
-  background-color: #333;
+  padding: 5rem;
   color: rgb(255, 255, 255);
   text-align: center;
-}
+  background-color: #333;
 
+}
 .container img {
-  width: 100%; /* Make the image fill the width of the container */
-  height: auto; /* Maintain aspect ratio */
+  max-width:100%; /* Make the image fill the width of the container */
+  height:auto; /* Maintain aspect ratio */
+  max-height: 200px;
+   height: 10rem;
+ width: 10rem;
+  border-radius: 10rem;
+border:solid;
 }
-
-.threeImages {
-  display: flex; /* Arrange items horizontally */
-  gap: 3rem;
+.main-container{
+  display:flex;
   flex-wrap: wrap;
   text-align: center;
 }
 .container {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   text-align: center;
-  border-radius: 4%;
-  padding-bottom: 4rem;
-  background-color: white;
-  color: black;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-left: 2rem;
+  padding-right:2rem ;
 }
-
-.container h2,
-.container p {
-  padding: 0.5rem;
-}
-.container img {
- border-top-right-radius: 4%;
- border-top-left-radius: 4%;
-  
-
-}
-
-@media (max-width: 768px) {
-  /* Adjust breakpoint as needed */
-  .container {
-    flex: 0 0 100%; /* Make containers full width on smaller screens */
-  }
-}
-@media (min-width: 768px) {
-  /* Adjust breakpoint as needed */
-  .container {
-    width: 33.33%; /* Each image takes up 1/3 of the width */
-  }
-}
-
-@media (max-width: 768px) {
-  /* Adjust breakpoint as needed */
-  .container {
-    width: 100%; /* Each image takes up the full width */
-  }
+.text-box{
+  padding: 20px;
+  flex: 1;
+  max-width: 100%;
 }
 
 /*----------------------Languages Section-----------------------*/
